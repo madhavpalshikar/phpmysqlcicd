@@ -6,7 +6,7 @@ RUN apt update -y && \
 apt install apache2 -y && \
 apt install php7.2 -y 
 
-RUN service apache restart
+RUN service apache2 restart
 
 WORKDIR /var/www/html/
 COPY . .
