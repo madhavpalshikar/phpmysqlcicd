@@ -16,4 +16,4 @@ COPY . .
 
 EXPOSE 80
 
-CMD service apache2 restart
+CMD service apache2 start
