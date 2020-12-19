@@ -9,4 +9,7 @@ apt install php7.2 -y
 RUN service apache2 restart
 
 WORKDIR /var/www/html/
+
 COPY . .
+
+EXPOSE 80
