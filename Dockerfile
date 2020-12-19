@@ -15,3 +15,5 @@ WORKDIR /var/www/html/
 COPY . .
 
 EXPOSE 80
+
+CMD service apache2 restart
