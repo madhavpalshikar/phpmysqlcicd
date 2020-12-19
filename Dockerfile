@@ -8,7 +8,7 @@ apt install php7.2 -y && \
 echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf && \
 apachectl configtest
 
-RUN  service apache2 restart
+RUN  service apache2 start
 
 WORKDIR /var/www/html/
 
@@ -16,4 +16,4 @@ COPY . .
 
 EXPOSE 80
 
-CMD service apache2 start
+
